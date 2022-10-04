@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+    --black: #000000;
+    --yellow: #FDDD02;
+    --dark-yellow: #CEBE0A;
+    --ligh-brown: #48463A;
+}
+
+body {
+    background: #000000;
+}
+
+.parent-b {
+    height: 100vh;
+    position: relative;
+}
+
+.children {
+    overflow: hidden;
+    position: absolute;
+}
+
+.title {
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    width: 800px;
+}
+
+.title h1 {
+
+    font-size: 250px;
+    color: var(--yellow);
+    font-family: 'Roboto mono', monospace;
+    font-weight: bolder;
+    overflow: hidden;
+
+    border-right: .15em solid orange;
+
+    white-space: nowrap;
+
+    margin: 0 auto;
+
+    animation:
+        typing 1.8s steps(40, end),
+        blink-caret .75s step-end infinite;
+
+}
+
+.container-line {
+    z-index: 1;
+    top: 58%;
+    left: 25%;
+    right: 25%;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: #ffffff81;
+    height: 15px;
+    width: 800px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+
+
+}
+
+.nav-div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease-in;
+
+}
+
+.container-line:hover {
+    width: 800px;
+    height: 250px;
+}
+
+.container-line:hover .nav-div {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.nav-div ul {
+    list-style-type: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-div ul li a {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Roboto mono' monospace;
+    color: #000000;
+}
+
+ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    overflow: hidden;
+    color: #CEBE0A;
+    white-space: nowrap;
+    transition: 0.5s ease-in-out;
+}
+
+ul:hover li a::before {
+    animation: animate2 1s steps(10) forwards;
+}
+
+ul li:hover a::before {
+    animation: animate1 1s steps(10) forwards;
+}
+
+
+
+
+
+
+
+@keyframes animate1 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 800px;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        width: 800px;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--dark-yellow);
+    }
+}
