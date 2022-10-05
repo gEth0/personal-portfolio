@@ -1,0 +1,9 @@
+<svg width="350" height="30" xmlns="http://www.w3.org/2000/svg">
+ <title>code</title>
+
+ <g>
+  <title>Layer 1</title>
+  <text font-weight="bold" transform="matrix(0.858109 0 0 0.920711 1.42867 2.34903)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="'Roboto Mono'" font-size="24" id="svg_2" y="22.85693" x="0.35533" stroke-width="0" fill="#ffffff">root@life:~$</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Roboto Mono'" font-size="24" id="svg_3" y="23.75" x="154.375" stroke-width="0" stroke="#000" fill="#fddd02">ls ./PROJECTS</text>
+ </g>
+</svg>
