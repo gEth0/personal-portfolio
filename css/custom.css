@@ -17,15 +17,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.parent-b {
-    height: 100vh;
-    position: relative;
-}
-
-.children {
-    overflow: hidden;
-    position: absolute;
-}
 
 .title {
     height: 100vh;
@@ -115,6 +106,10 @@ nav .nav-div .logo {
 
 .container-typing {
     display: inline-block;
+}
+
+.title-p {
+    display: none;
 }
 
 .typed-out {
@@ -218,7 +213,7 @@ nav .nav-div .logo {
     }
 
     .typed-out {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .text {
@@ -300,8 +295,8 @@ nav .nav-div .logo {
     nav .nav-div a {
         margin-left: 5px;
         margin-right: 5px;
-        float: right;
-        font-size: 15px;
+
+        font-size: 12px;
         font-weight: bold;
         font-family: 'Roboto mono', monospace;
         color: #ffffff;
