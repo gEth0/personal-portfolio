@@ -55,7 +55,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    border-radius: 20px;
+
     background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
@@ -195,6 +195,31 @@ nav .nav-div .logo {
 
 .typed-out span {
     color: #FDDD02;
+}
+
+footer {
+    border-top: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-text {
+    color: white;
+    font-size: 15px;
+    font-family: 'Roboto mono', monospace;
+}
+
+.footer-text span {
+    color: #ffbd44;
+}
+
+.footer-text a {
+
+    color: #ffbd44;
 }
 
 @keyframes typing {
