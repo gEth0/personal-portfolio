@@ -1,10 +1,8 @@
-window.onscroll = function(){nav_scroll()}
-nav = document.getElementById('nav')
-
-function nav_scroll(){
-    if(document.documentElement.scrollTop>=50){
-       nav.classList.add('scrolled')
-    }else {
-        nav.classList.remove('scrolled')
-}
-}
+function responsive() {
+    var x = document.getElementById("nav-div");
+    if (x.className === "nav-div") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav-div";
+    }
+  }
