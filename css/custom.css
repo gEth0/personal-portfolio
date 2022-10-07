@@ -173,8 +173,11 @@ nav .nav-div .logo {
 }
 
 .text p span {
+    font-weight: bolder;
     color: #CEBE0A;
 }
+
+
 
 .tile {
 
@@ -359,6 +362,10 @@ footer {
         font-size: 120px;
     }
 
+    #type3 {
+        font-size: 16px;
+    }
+
     .typed-out {
         font-size: 17.25px;
         font-weight: bolder;
@@ -459,6 +466,47 @@ footer {
         background-color: #ffea0054;
         font-size: 17px;
     }
+
+    .scroll-item {
+        padding: 10px;
+        flex: 0 0 100%;
+        height: auto;
+        width: 100%;
+        -webkit-overflow-scrolling: touch;
+        flex-direction: column;
+
+    }
+
+    .scroll-item p {
+        font-size: 15px;
+    }
+
+    .scroll-item h2,
+    h5 {
+        font-size: 20px;
+        font-family: "Roboto mono", monospace;
+        color: white;
+    }
+
+    .scroll-item a {
+        color: #FDDD02;
+    }
+
+    .scroll-item .image1 img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .scroll-item .image2 img {
+        height: 100px;
+        width: 150px;
+    }
+
+    .scroll-item .image3 img {
+        height: 100px;
+        width: 150px;
+    }
+
 
     .footer-social p {
         color: white;
