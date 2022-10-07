@@ -1,10 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
     --black: #000000;
     --yellow: #FDDD02;
     --dark-yellow: #CEBE0A;
     --ligh-brown: #48463A;
+}
+
+::-webkit-scrollbar,
+.scroll-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track,
+.scroll-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px transparent;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb,
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #CEBE0A;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover,
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #FDDD02;
+    width: 15px;
 }
 
 body {
@@ -134,6 +161,21 @@ nav .nav-div .logo {
     padding: 20px;
 }
 
+.text p {
+    font-size: 20px;
+    color: white;
+    font-family: "Roboto mono", monospace;
+
+}
+
+.text p a {
+    color: #CEBE0A;
+}
+
+.text p span {
+    color: #CEBE0A;
+}
+
 .tile {
 
 
@@ -188,10 +230,62 @@ nav .nav-div .logo {
 
 }
 
-/* 
-.child {
-    height: 100vh;
-} */
+.scroll-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 10px;
+
+
+    scroll-snap-type: x mandatory;
+}
+
+
+
+.scroll-item {
+    padding: 20px;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    height: auto;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.scroll-item p {
+    font-size: 23px;
+}
+
+.scroll-item h2,
+h5 {
+    font-size: 90px;
+    font-family: "Roboto mono", monospace;
+    color: white;
+}
+
+.scroll-item a {
+    color: #FDDD02;
+}
+
+.scroll-item .image1 img {
+    height: 350px;
+    width: 350px;
+}
+
+.scroll-item .image2 img {
+    height: 300px;
+    width: 400px;
+}
+
+.scroll-item .image3 img {
+    height: 300px;
+    width: 350px;
+}
 
 .typed-out span {
     color: #FDDD02;
