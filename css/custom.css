@@ -280,6 +280,11 @@ h5 {
     width: 350px;
 }
 
+.scroll-item .imageSpoty img {
+    height: 350px;
+    width: 350px;
+}
+
 .scroll-item .image2 img {
     height: 300px;
     width: 400px;
@@ -493,6 +498,11 @@ footer {
     }
 
     .scroll-item .image1 img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .scroll-item .imageSpoty img {
         height: 100px;
         width: 100px;
     }
