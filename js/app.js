@@ -30,7 +30,7 @@ const date = new Date()
 const loadCopyrightYear = (div)=>{
   let year = date.getFullYear().toString()
   let valueF  = `Copyright ${year}`
-  div.innerHTML(valuF)
+  div.innerHTML(valueF)
 }
 
 window.onload = loadCopyrightYear(copyrightDiv)
