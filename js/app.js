@@ -1,6 +1,7 @@
 x = document.getElementById('type1')
 y = document.getElementById('type2')
 z = document.getElementById('type3')
+let copyrightDiv = document.getElementById("copyright")
 
 function addclass (){
   if(document.documentElement.scrollTop > 370){
@@ -24,5 +25,15 @@ function addclass (){
 
   
 }
+
+const date = new Date()
+const loadCopyrightYear = (div)=>{
+  let year = date.getFullYear().toString()
+  let valueF  = `Copyright ${year}`
+  div.innerHTML(valuF)
+}
+
+window.onload = loadCopyrightYear(copyrightDiv)
+
 
 window.onscroll = function(){addclass()}
